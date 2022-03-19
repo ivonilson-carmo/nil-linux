@@ -50,13 +50,6 @@ h1{
     font-size: 3em;
 }
 
-.text-legend{
-    font-size: 1.5em;
-}
-
-.text-legend-white{
-    color: #ccc;
-}
 
 .buttons-release-system{
     display: flex;
@@ -88,11 +81,11 @@ h1{
     flex-direction: column;
 }
 
-.height-fix-270 .content-info, .height-fix-220 .content-info-noborder{
+.height-fix-medium .content-info, .height-fix-medium .content-info-noborder{
     height: 270px;
 }
 
-.height-fix-220 .content-info, .height-fix-220 .content-info-noborder{
+.height-fix-small .content-info, .height-fix-small .content-info-noborder{
     height: 220px;
 }
 
@@ -255,7 +248,7 @@ footer{
 .footer-contents{
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 20px 0;
 }
 
@@ -297,4 +290,122 @@ footer p{
 
 .about p{
     font-size: .8em;
+}
+
+@media (max-width: 1020px )
+{
+    section:first-of-type img{
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 900px)
+{
+    
+    #question .contents{
+        flex-wrap: wrap;
+    }
+    .content-info-noborder{
+        width: 300px;
+    }
+
+    footer .footer-contents{
+        flex-wrap: wrap;
+    }
+
+    footer .content-footer{
+        width: 300px;
+    }
+
+    footer .larger{
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    footer .content-footer:nth-child(2){
+        margin-top: 20px;
+    }
+    
+}
+
+@media (max-width: 790px){
+    #utils .content-info{
+        height: 200px;
+        width: 250px;
+    }
+
+    #jornal button{
+        font-size: 2em;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 700px){
+    footer .footer-contents{
+        flex-direction: column;
+        width: 100%;
+    }
+    footer .content-footer{
+        max-width: max-content;
+        width: 90%;
+    }
+
+    #patricionadores .contents{
+        align-items: center;
+        justify-content: center;
+    }
+    #patricionadores .content-info-noborder{
+        width: 100px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 699px){
+    #patricionadores .content-info-noborder{
+        width: 40%;
+        padding: 5px;
+        margin: 5px 0;
+    }
+
+    #patricionadores .content-info-noborder img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 602px) {
+    .header-section{
+        width: 100%;
+    }
+    .header-section h2{
+        font-size: 1.5em;
+        width: 80%;
+    }
+
+    .header-section p{
+        font-size: .8em;
+        width: 80%;
+    }
+
+    #nav-header a{
+        margin: 0;
+        padding: 10px;
+    }
+
+    #patricionadores .contents{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #patricionadores .content-info-noborder{
+        width: 40%;
+        padding: 5px;
+        margin: 5px 0;
+    }
+
+    #patricionadores .content-info-noborder img{
+        width: 100%;
+    }
 }

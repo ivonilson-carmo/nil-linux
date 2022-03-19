@@ -14,7 +14,7 @@
     <title> Nil Linux </title>
 </head>
 
-<body>
+<body onresize="resizePage()">
     <header>
         <div class="logo-header">
             <img src="assets/img/NL.png" alt="Logo Nil Linux">
@@ -28,7 +28,7 @@
     </header>
 
     <main>
-        <section>
+        <section id="main">
             <div>
                 <h1> Nil Linux 4.9</h1>
                 <p class="text-legend"> Ultima versão lançada é essa, faça a instalação agora.</p>
@@ -44,13 +44,13 @@
             </div>
         </section>
 
-        <section>
+        <section id="utils">
 
-            <div class="contents height-fix-270">
+            <div class="contents height-fix-small">
 
                 <div class="content-info">
                     <h2>Design grafícos</h2>
-                    <p class="text-legend">
+                    <p class="">
                         Trabalhos em 3D com Blender, draw ou editar fotos com o GIMP, utilize do Inkscape para vetores
                         grafícos.
                     </p>
@@ -58,14 +58,14 @@
 
                 <div class="content-info">
                     <h2> Jogos </h2>
-                    <p class="text-legend">
+                    <p class="">
                         Acesse mais de 7.000 jogos com Video. Instale GOG para ter sempre mais.
                     </p>
                 </div>
 
                 <div class="content-info">
                     <h2> Produtividade</h2>
-                    <p class="text-legend">
+                    <p class="">
                         Com o LibreOffice's, use o processador word, faça apresentações, desenhos ou banco de dados.
                         Importe facilmente ou exporte para pdf arquivos do Microsoft Office.
                     </p>
@@ -73,7 +73,7 @@
 
                 <div class="content-info">
                     <h2> Internet </h2>
-                    <p class="text-legend">
+                    <p class="">
                         Navegue na web, assista videos no YouTube e acesse a Netflix com o firefox. Ative um website
                         dentro da área de trabalho para imediato acesso.
                     </p>
@@ -81,7 +81,7 @@
 
                 <div class="content-info">
                     <h2> Multimidia </h2>
-                    <p class="text-legend">
+                    <p class="">
                         Escute suas músicas, assista TV e videos, escute podcasts, Spotify ou radio online.
                     </p>
                 </div>
@@ -96,13 +96,13 @@
             </div>
         </section>
 
-        <section>
+        <section id="why-choose">
             <div class="header-section">
                 <p> Porque escolher o Nil Linux??</p>
                 <h2>Facíl para usar, rapido e confortavel</h2>
             </div>
 
-            <div class="contents height-fix-220">
+            <div class="contents height-fix-small">
                 <div class="content-info-noborder">
                     <h2> OOBT </h2>
                     <p>Tudo funciona "Out Of The Box", sem a necessidade de configurar nada ou instalar aplicativos
@@ -146,7 +146,7 @@
             </div>
         </section>
 
-        <section class="section-fundo-destaque">
+        <section id="question" class="section-fundo-destaque">
             <div class="header-section">
                 <p> Possiveis perguntas </p>
                 <h2> Divertido, útil e encantador.</h2>
@@ -189,7 +189,7 @@
             </div>
             <div class="contents content-nowrap">
                 <div class="arrow">
-                    <button onclick="volta(event)"> &lt; </button>
+                    <button onclick="voltaNoticia(event)"> &lt; </button>
                 </div>
                 <div class="content-info-noborder">
                     <p>03-03-2022</p>
@@ -240,7 +240,7 @@
                         iure, deserunt dolorum, architecto ab?</p>
                 </div>
                 <div class="arrow">
-                    <button onclick="avanca(event)"> &gt; </button>
+                    <button onclick="avancaNoticia(event)"> &gt; </button>
                 </div>
             </div>
         </section>
@@ -280,9 +280,7 @@
                     <img src="./assets/imgs-patriocinadores/Neon-logo-brasil-300x259.webp" alt="Neon">
                 </div>
 
-                <div class="content-info-noborder autowid">
-                    <img src="./assets/imgs-patriocinadores/Seenit.jpg" alt="seniit">
-                </div>
+               
 
             </div>
         </section>
@@ -292,12 +290,12 @@
     <footer>
 
         <div class="footer-contents">
-            <div class="content-footer">
+            <div class="content-footer larger">
                 <img src="./assets/img/NL.png" alt="Logo nilLinux">
                 <p>Graças às suas doações e publicidade, o Nil Linux é totalmente gratuito. Esperamos que você goste de usá-lo tanto quanto gostamos de trabalhar nele.</p>
             </div>
 
-            <div class="content-footer">
+            <div class="content-footer larger">
                 <p> Almost all the packages we distribute are open-source. You can find their source code on https://packages.ubuntu.com, http://packages.linuxmint.com or https://github.com/linuxmint. If you can't find what you're looking for contact us. </p>
             </div>
 
