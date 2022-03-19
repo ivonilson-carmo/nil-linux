@@ -18,7 +18,7 @@ header{
     margin-bottom: 20px;
 }
 
-.logo-header, .logo-header img{
+.logo-header, .logo-header img, .logo-header picture{
     height: 90%;
 }
 

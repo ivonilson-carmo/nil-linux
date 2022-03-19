@@ -49,9 +49,6 @@ function avancaNoticia(ele){
 
 function resizePage(){
     changeViewNews()
-    if (wid < 602){
-        document.querySelector('.logo-header img').src = './assets/img/logo.png'
-    }
 }
 
 changeElementsJornal()

@@ -12,13 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand:wght@400&display=swap"
         rel="stylesheet">
     <title> Nil Linux </title>
-    <script src="js/funcoes.js"></script>
 </head>
 
 <body onresize="resizePage()">
     <header>
         <div class="logo-header">
-            <img src="assets/img/NL.png" alt="Logo Nil Linux">
+            <picture>
+                <source srcset="./assets/img/logo.png" media="(max-width:602px)">
+                <img src="./assets/img/NL.png" alt="Logo NIl Linux">
+            </picture>
         </div>
         <nav id="nav-header">
             <a href="#">Home</a>
@@ -333,9 +335,10 @@
             <p> Nil Linux é protegido por direitos autorais desde 2006 e marca registrada através do Linux Mark Institute. Todos os direitos reservados. </p>
             <p> Linux® é marca registrada de Linus Torvalds nos EUA e em outros países. </p>
         </div>
-
+        
     </footer>
-
+    
+    <script src="js/funcoes.js"></script>
     
 </body>
 
